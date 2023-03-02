@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/02af8cebea.js" crossorigin="anonymous"></script>
+    <title>Light Mail</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header | row align-items-center">
+            <img class="col-6 col-md-4 col-lg-2" src="assets/light mail small 3.png" alt="">
+            <!-- search-bar tablet and up -->
+            <div class=" col-md-5 col-lg-4 d-none d-md-block">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search Email...">
+                </div>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <i class="header-icon | fa-solid fa-user fa-3x"></i>
+            </div>
+        </header>
+        <!-- search-bar mobile only -->
+        <section class="search | row d-md-none">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search Email...">
+            </div>
+        </section>
+
+        <!-- mobile categories menu -->
+        <section class="categories | row align-items-center d-md-none">
+            <div class="col">
+                <i class="fa-solid fa-bars fa-2x" type="button" data-bs-toggle="modal"
+                    data-bs-target="#categoriesModal"></i>
+            </div>
+
+            <div class="modal fade" id="categoriesModal" tabindex="-1" aria-labelledby="categoriesModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="categoriesModalLabel">Folders</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" data-type="categories">
+                            <nav>
+                                <div class="nav-item">
+                                    <i class="nav-icon fa-solid fa-folder fa-1x"></i>
+                                    <h3>Inbox</h3>
+                                </div>
+                                <div class="nav-item">
+                                    <i class="nav-icon fa-regular fa-heart fa-1x"></i>
+                                    <h3>Saved</h3>
+                                </div>
+                                <div class="nav-item">
+                                    <i class="nav-icon fa-regular fa-trash-can fa-1x"></i>
+                                    <h3>Deleted</h3>
+                                </div>
+                            </nav>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile compose button -->
+            <div class="col-auto d-md-none">
+                <button type="button" class="button | btn btn-lg">Compose</button>
+            </div>
+        </section>
+
+        <!-- tablet categories menu -->
+        <section class="categories | row d-none d-md-flex d-lg-none align-items-center" data-type="md-lg">
+            <div class="col-4 d-flex justify-content-center">
+                <button type="button" class="button">Compose</button>
+            </div>
+            <div class="col-8">
+                <nav class="nav | d-flex justify-content-around">
+                    <div class="nav-item" data-type="mobile">
+                        <i class="nav-icon fa-solid fa-folder fa-1x"></i>
+                        <h3>Inbox</h3>
+                    </div>
+                    <div class="nav-item">
+                        <i class="nav-icon fa-regular fa-heart fa-1x"></i>
+                        <h3>Saved</h3>
+                    </div>
+                    <div class="nav-item">
+                        <i class="nav-icon fa-regular fa-trash-can fa-1x"></i>
+                        <h3>Deleted</h3>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+        <!-- inbox -->
+        <section class="inbox | row">
+            <section class="categories | col-lg-2 d-none d-lg-block text-center" data-type="md-lg">
+                <button type="button" class="button">Compose</button>
+                <nav>
+                    <div class="nav-item" data-type="lrg">
+                        <i class="nav-icon fa-solid fa-folder fa-1x"></i>
+                        <h3>Inbox</h3>
+                    </div>
+                    <div class="nav-item" data-type="lrg">
+                        <i class="nav-icon fa-regular fa-heart fa-1x"></i>
+                        <h3>Saved</h3>
+                    </div>
+                    <div class="nav-item" data-type="lrg">
+                        <i class="nav-icon fa-regular fa-trash-can fa-1x"></i>
+                        <h3>Deleted</h3>
+                    </div>
+                </nav>
+            </section>
+            <div class="emails | col-12 col-md-4">
+                <div class="d-sm-block d-md-none">
+                    <article class="email" type="button" data-bs-toggle="modal" data-bs-target="#emailModal">
+                        <div class="email-title">
+                            <h3>Tyler Green</h3>
+                            <p>1/23/23</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet...</p>
+                    </article>
+                </div>
+
+                <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="emailModalLabel">Tyler Green</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>To: Bay Valley Tech</p>
+                                <p>CC: Cohort 231</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut ornare ex.
+                                    Vestibulum in
+                                    libero
+                                    ultricies leo aliquet blandit sit amet eget massa. Nullam at orci laoreet,
+                                    sagittis
+                                    dui
+                                    id,
+                                    hendrerit
+                                    ante. Nunc sit amet leo consectetur, auctor dui eu, congue augue. Curabitur at
+                                    elit
+                                    turpis.
+                                    Integer
+                                    auctor semper elit, nec convallis nisl. Donec a sagittis ligula. Mauris
+                                    elementum,
+                                    risus
+                                    eu
+                                    consectetur
+                                    condimentum, ante felis venenatis magna, eu fringilla lorem odio non nunc.
+                                    Phasellus
+                                    nec
+                                    ornare
+                                    magna.
+                                    Aenean sollicitudin blandit justo eget suscipit. Mauris dui velit, blandit vitae
+                                    ultrices sit
+                                    amet,
+                                    feugiat a felis. Donec sit amet auctor odio. Integer sodales, tortor rutrum
+                                    hendrerit
+                                    pellentesque,
+                                    libero orci condimentum eros, ut facilisis ipsum leo id ligula.
+                                    Duis pharetra sem sed orci tincidunt sollicitudin. Aenean id neque mollis,
+                                    elementum
+                                    turpis non,
+                                    pretium
+                                    lorem. Nullam lacinia faucibus lorem nec congue. In nulla est, dictum et ex non,
+                                    laoreet
+                                    mattis
+                                    augue.
+                                    Nam id pharetra lacus. Phasellus vitae tortor magna. Phasellus mollis, sem non
+                                    porta
+                                    porta,
+                                    neque
+                                    arcu
+                                    feugiat ipsum, ac vulputate sapien ante sit amet metus. Donec finibus lacus nec
+                                    sapien
+                                    feugiat
+                                    lobortis.
+                                    Pellentesque aliquam posuere velit in vehicula. Vivamus pulvinar fringilla
+                                    interdum.
+                                    Vestibulum
+                                    congue
+                                    arcu ullamcorper purus luctus fermentum. Class aptent taciti sociosqu.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary">Reply</button>
+                                <button type="button" class="btn btn-secondary">Forward</button>
+                                <button type="button" class="btn btn-secondary">Save</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <article class="email | d-none d-md-block" type="button">
+                    <div class="email-title">
+                        <h3>Tyler Green</h3>
+                        <p>1/23/23</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet...</p>
+                </article>
+                <article class="email" type="button">
+                    <div class="email-title">
+                        <h3>Cohort 231</h3>
+                        <p>1/19/23</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet...</p>
+                </article>
+            </div>
+
+            <div class="expanded-view | col-md-8 col-lg-6 d-none d-md-block">
+                <article>
+                    <h2>Tyler Green</h2>
+                    <p>To: Bay Valley Tech</p>
+                    <p>CC: Cohort 231</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut ornare ex. Vestibulum in
+                        libero
+                        ultricies leo aliquet blandit sit amet eget massa. Nullam at orci laoreet, sagittis dui id,
+                        hendrerit
+                        ante. Nunc sit amet leo consectetur, auctor dui eu, congue augue. Curabitur at elit turpis.
+                        Integer
+                        auctor semper elit, nec convallis nisl. Donec a sagittis ligula. Mauris elementum, risus eu
+                        consectetur
+                        condimentum, ante felis venenatis magna, eu fringilla lorem odio non nunc. Phasellus nec
+                        ornare
+                        magna.
+                        Aenean sollicitudin blandit justo eget suscipit. Mauris dui velit, blandit vitae ultrices
+                        sit
+                        amet,
+                        feugiat a felis. Donec sit amet auctor odio. Integer sodales, tortor rutrum hendrerit
+                        pellentesque,
+                        libero orci condimentum eros, ut facilisis ipsum leo id ligula.
+                        Duis pharetra sem sed orci tincidunt sollicitudin. Aenean id neque mollis, elementum turpis
+                        non,
+                        pretium
+                        lorem. Nullam lacinia faucibus lorem nec congue. In nulla est, dictum et ex non, laoreet
+                        mattis
+                        augue.
+                        Nam id pharetra lacus. Phasellus vitae tortor magna. Phasellus mollis, sem non porta porta,
+                        neque
+                        arcu
+                        feugiat ipsum, ac vulputate sapien ante sit amet metus. Donec finibus lacus nec sapien
+                        feugiat
+                        lobortis.
+                        Pellentesque aliquam posuere velit in vehicula. Vivamus pulvinar fringilla interdum.
+                        Vestibulum
+                        congue
+                        arcu ullamcorper purus luctus fermentum. Class aptent taciti sociosqu.
+                    </p>
+                </article>
+                <article class="button-row">
+                    <button type="button" class="button">Reply</button>
+                    <button type="button" class="button">Forward</button>
+                    <button type="button" class="button">Save</button>
+                </article>
+            </div>
+        </section>
+    </div>
+    <div class="extend-bottom | row d-md-none">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

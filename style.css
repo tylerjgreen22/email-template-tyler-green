@@ -1,0 +1,108 @@
+.header {
+    background-color: #172121;;
+}
+
+.search {
+    background-color: #212738;
+    padding: 1em 0;
+}
+
+.categories {
+    background-color: #040F16;
+    padding: 1em 0;
+}
+
+.categories[data-type="md-lg"] {
+    background-color: #212738;
+}
+
+.button {
+    border-radius: 25px;
+    border: 0;
+    padding: .5em 2em;
+    background-color: #172121;
+    color: #F0EFF4;
+}
+
+.button:hover {
+    opacity: 50%;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inbox {
+    background-color: #040F16;
+}
+
+.emails {
+    padding-top: 1em;
+}
+
+.email-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-content {
+    background-color: #212738;
+}
+
+.modal-body {
+    display: block;
+}
+
+.modal-body[data-type="categories"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.expanded-view {
+    padding: 1em;
+    background-color: #212738;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item[data-type="lrg"] {
+    padding: 1em;
+}
+
+.nav-item > i {
+    position: absolute;
+    top: 25%;
+    left: -30%;
+}
+
+.nav-item[data-type="lrg"] > i {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+
+.email {
+    padding: .5em;
+}
+
+.email:hover {
+    box-shadow: 0px 0px 5px 4px rgba(214,214,214,0.3);
+}
+
+.email:active {
+    opacity: 50%;
+}
+
+.extend-bottom {
+    height: 100vh;
+    background-color: #040F16;
+}
+
+body {
+    color: #F0EFF4;
+    background-color: #000000;
+}
