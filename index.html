@@ -5,39 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap css link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
+    <!-- font-awesome icons script -->
     <script src="https://kit.fontawesome.com/02af8cebea.js" crossorigin="anonymous"></script>
+
     <title>Light Mail</title>
 </head>
 
 <body>
     <div class="container">
+
         <header class="header | row align-items-center">
+
             <!-- logo -->
             <img class="col-6 col-md-4 col-lg-2" src="assets/light mail small 3.png" alt="logo">
+
             <!-- search-bar tablet and up -->
             <div class=" col-md-5 col-lg-4 d-none d-md-block">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search Email...">
                 </div>
             </div>
+
             <!-- profile icon -->
             <div class="col d-flex justify-content-end">
                 <i class="header-icon | fa-solid fa-user fa-3x"></i>
             </div>
+
         </header>
 
         <!-- search-bar mobile only -->
         <section class="search | row d-md-none">
+
             <div class="input-group">
                 <input type="text" class="form-control" placeholder="Search Email...">
             </div>
+
         </section>
 
         <!-- mobile categories menu -->
         <section class="categories | row align-items-center d-md-none">
+
             <div class="col">
                 <i class="fa-solid fa-bars fa-2x" type="button" data-bs-toggle="modal"
                     data-bs-target="#categoriesModal"></i>
@@ -77,13 +90,18 @@
             <div class="col-auto d-md-none">
                 <button type="button" class="button | btn btn-lg">Compose</button>
             </div>
+
         </section>
 
-        <!-- tablet categories menu -->
+        <!-- tablet categories row -->
         <section class="categories | row d-none d-md-flex d-lg-none align-items-center" data-type="md-lg">
+
+            <!-- tablet compose button -->
             <div class="col-4 d-flex justify-content-center">
                 <button type="button" class="button">Compose</button>
             </div>
+
+            <!-- tablet categories -->
             <div class="col-8">
                 <nav class="nav | d-flex justify-content-around">
                     <div class="nav-item" data-type="mobile">
@@ -100,14 +118,19 @@
                     </div>
                 </nav>
             </div>
+
         </section>
 
         <!-- inbox -->
         <section class="inbox | row">
 
-            <!-- desktop categories -->
+            <!-- desktop categories column-->
             <section class="categories | col-lg-2 d-none d-lg-block text-center" data-type="md-lg">
+
+                <!-- desktop compose button -->
                 <button type="button" class="button">Compose</button>
+
+                <!-- desktop categories -->
                 <nav>
                     <div class="nav-item" data-type="lrg">
                         <i class="nav-icon fa-solid fa-folder fa-1x"></i>
@@ -122,13 +145,13 @@
                         <h3 class="sub-heading">Deleted</h3>
                     </div>
                 </nav>
+
             </section>
 
             <!-- emails -->
             <section class="emails | col-12 col-md-4">
 
                 <!-- mobile email -->
-
                 <article class="email |d-sm-block d-md-none" type="button" data-bs-toggle="modal"
                     data-bs-target="#emailModal">
                     <div class="email-title">
@@ -137,7 +160,6 @@
                     </div>
                     <p class="body-fs">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet...</p>
                 </article>
-
 
                 <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel"
                     aria-hidden="true">
@@ -353,9 +375,12 @@
 
         </section>
     </div>
+
+    <!-- bootstrap js script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
