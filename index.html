@@ -15,6 +15,7 @@
 <body>
     <div class="container">
         <header class="header | row align-items-center">
+            <!-- logo -->
             <img class="col-6 col-md-4 col-lg-2" src="assets/light mail small 3.png" alt="">
             <!-- search-bar tablet and up -->
             <div class=" col-md-5 col-lg-4 d-none d-md-block">
@@ -22,10 +23,12 @@
                     <input type="text" class="form-control" placeholder="Search Email...">
                 </div>
             </div>
+            <!-- profile icon -->
             <div class="col d-flex justify-content-end">
                 <i class="header-icon | fa-solid fa-user fa-3x"></i>
             </div>
         </header>
+
         <!-- search-bar mobile only -->
         <section class="search | row d-md-none">
             <div class="input-group">
@@ -39,7 +42,6 @@
                 <i class="fa-solid fa-bars fa-2x" type="button" data-bs-toggle="modal"
                     data-bs-target="#categoriesModal"></i>
             </div>
-
             <div class="modal fade" id="categoriesModal" tabindex="-1" aria-labelledby="categoriesModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
@@ -64,13 +66,13 @@
                                 </div>
                             </nav>
                         </div>
-
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
             </div>
+
             <!-- mobile compose button -->
             <div class="col-auto d-md-none">
                 <button type="button" class="button | btn btn-lg">Compose</button>
@@ -102,6 +104,8 @@
 
         <!-- inbox -->
         <section class="inbox | row">
+
+            <!-- desktop categories -->
             <section class="categories | col-lg-2 d-none d-lg-block text-center" data-type="md-lg">
                 <button type="button" class="button">Compose</button>
                 <nav>
@@ -119,16 +123,21 @@
                     </div>
                 </nav>
             </section>
-            <div class="emails | col-12 col-md-4">
-                <div class="d-sm-block d-md-none">
-                    <article class="email" type="button" data-bs-toggle="modal" data-bs-target="#emailModal">
-                        <div class="email-title">
-                            <h3>Tyler Green</h3>
-                            <p>1/23/23</p>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet...</p>
-                    </article>
-                </div>
+
+            <!-- emails -->
+            <section class="emails | col-12 col-md-4">
+
+                <!-- mobile email -->
+
+                <article class="email |d-sm-block d-md-none" type="button" data-bs-toggle="modal"
+                    data-bs-target="#emailModal">
+                    <div class="email-title">
+                        <h3>Tyler Green</h3>
+                        <p>1/23/23</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet...</p>
+                </article>
+
 
                 <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel"
                     aria-hidden="true">
@@ -205,6 +214,7 @@
                     </div>
                 </div>
 
+                <!-- tablet and up email -->
                 <article class="email | d-none d-md-block" type="button">
                     <div class="email-title">
                         <h3>Tyler Green</h3>
@@ -212,6 +222,8 @@
                     </div>
                     <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet...</p>
                 </article>
+
+                <!-- all size emails (no modal) -->
                 <article class="email" type="button">
                     <div class="email-title">
                         <h3>Cohort 231</h3>
@@ -289,9 +301,10 @@
                     </div>
                     <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet...</p>
                 </article>
-            </div>
+            </section>
 
-            <div class="expanded-view | col-md-8 col-lg-6 d-none d-md-block">
+            <!-- expanded view of email for tablet and large  -->
+            <section class="expanded-view | col-md-8 col-lg-6 d-none d-md-block">
                 <article>
                     <h2>Tyler Green</h2>
                     <p>To: Bay Valley Tech</p>
@@ -336,7 +349,8 @@
                     <button type="button" class="button">Forward</button>
                     <button type="button" class="button">Save</button>
                 </article>
-            </div>
+            </section>
+
         </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
