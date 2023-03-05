@@ -39,25 +39,15 @@ body {
 
 /* categories nav */
 .nav-item {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
 }
 
-.nav-item[data-type="lrg"] {
-    padding: 1em;
+.nav-item > span {
+    padding-left: .5em;
 }
-
-.nav-item > i {
-    position: absolute;
-    top: 25%;
-    left: -30%;
-}
-
-.nav-item[data-type="lrg"] > i {
-    position: absolute;
-    top: 35%;
-    left: 10%;
-}
-
 
 /* button */
 .button {
